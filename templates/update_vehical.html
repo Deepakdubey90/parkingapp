@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset = "utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
+    <link rel="stylesheet" href="{{ STATIC_URL }}/css/custom.css "/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+	<script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="well">Vehical Parking Modification</h1>
+      <div class="col-lg-12 well">
+	<div class="row">
+	  <form>
+	    <div class="col-sm-12">
+	      <div class="row">
+		<div class="col-sm-6 form-group">
+		  <label>Vehical Name</label>
+		  <input type="text" placeholder="Enter Vehical Name Here.." class="form-control">
+		</div>
+		<div class="col-sm-6 form-group">
+		  <label>Vehical Number</label>
+		  <input type="text" placeholder="Enter Vehical Number Here.." class="form-control">
+		</div>
+	      </div>
+	      <div class="form-group">
+		<label>Select Vehical Type</label>
+		<div class = "dropdown">
+
+		  <button type = "button" class = "btn dropdown-toggle" id = "dropdownMenu1" data-toggle = "dropdown">
+		    Topics
+		    <span class = "caret"></span>
+		  </button>
+
+		  <ul class = "dropdown-menu" role = "menu" aria-labelledby = "dropdownMenu1">
+		    <li role = "presentation" class = "dropdown-header">Dropdown header</li>
+
+		    <li role = "presentation" >
+		      <a role = "menuitem" tabindex = "-1" href = "#">Java</a>
+		    </li>
+
+		    <li role = "presentation">
+		      <a role = "menuitem" tabindex = "-1" href = "#">Data Mining</a>
+		    </li>
+
+		    <li role = "presentation">
+		      <a role = "menuitem" tabindex = "-1" href = "#">
+			Data Communication/Networking
+		      </a>
+		    </li>
+
+		    <li role = "presentation" class = "divider"></li>
+		    <li role = "presentation" class = "dropdown-header">Dropdown header</li>
+
+		    <li role = "presentation">
+		      <a role = "menuitem" tabindex = "-1" href = "#">Separated link</a>
+		    </li>
+		  </ul>
+		</div>
+	      </div>
+	      <div class="row">
+		<div class="col-sm-6 form-group">
+		  <label>In Time </label>
+		  <input type="text" placeholder="Enter Vehical In-Time Here.." class="form-control">
+		</div>
+		<div class="col-sm-6 form-group">
+		  <label>Out Time</label>
+		  <input type="text" placeholder="Enter Vehical Out-Time Here.." class="form-control">
+		</div>
+	      </div>
+
+	      <div class="row">
+		<div class="form-group">
+		  <label>Parking Charge</label>
+		  <input type="text" placeholder="Enter Parking Charge Here.." class="form-control">
+		</div>
+	      </div>
+	      <button type="button" class="btn btn-lg btn-info">Submit</button>
+	    </div>
+	  </form>
+	</div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
