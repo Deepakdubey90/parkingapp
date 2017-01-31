@@ -5,7 +5,7 @@ TYPE_CHOICES = (
     ('truck','TRUCK'),
     ('suv', 'SUV'),
     ('car','CAR'),
-    ('bike','BYKE'),
+    ('byke','BYKE'),
     ('cycle','CYCLE'),
 )
 
@@ -20,8 +20,8 @@ class VehicalParking(models.Model):
     vehical_type = models.CharField(
         max_length=30, choices=TYPE_CHOICES, default='cycle'
     )
-    vehical_intime = models.DateTimeField()
-    vehical_outtime = models.DateTimeField()
+    vehical_intime = models.TimeField(blank=False, null=False)
+    vehical_outtime = models.TimeField(blank=False, null=False)
     park_fare = models.CharField(max_length=100)
 
 
