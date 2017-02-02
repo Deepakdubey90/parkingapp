@@ -8,6 +8,6 @@ class VehicalParkingSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = VehicalParking
-        fields = ('vehical_name', 'vehical_number', 'vehical_type',
+        fields = ('id', 'vehical_name', 'vehical_number', 'vehical_type',
                   'vehical_intime', 'vehical_outtime', 'park_fare'
         )
