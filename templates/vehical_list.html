@@ -10,6 +10,7 @@
 
     <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/custom.css "/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <link href="images/favicon.ico" rel="shortcut icon" />
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -45,6 +46,12 @@
 	  </tr>
 	</tbody>
       </table>
+      <p data-placement="top" data-toggle="tooltip" title="Add">
+	<strong>Please click on Plus sign to add new record &nbsp;</strong>
+	<button class="btn btn-primary btn-xs btnAdd" data-title="Add" data-toggle="modal" data-target="#add" data-id=""+ data[i].id +"">
+	  <span class="glyphicon glyphicon-plus"></span>
+	</button>
+      </p>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
