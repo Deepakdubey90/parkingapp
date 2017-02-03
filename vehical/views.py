@@ -12,12 +12,11 @@ from django.shortcuts import render
 def CreateVehicalView(request, template_name='create_vehical.html'):
     """
     """
-    vehicals = [  {'key':'TRUCK'},
-                  {'key': 'SUV'},
-                  {'key':'CAR'},
-                  {'key':'BYKE'},
-                  {'key':'CYCLE'}]
-    #vehicals  = VehicalParking.objects.all()
+    vehicals = [{'key':'TRUCK'},
+                {'key': 'SUV'},
+                {'key':'CAR'},
+                {'key':'BYKE'},
+                {'key':'CYCLE'}]
     return render(request, template_name, {'data': vehicals})
 
 
